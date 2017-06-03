@@ -1,0 +1,30 @@
+R:
+    SpecialRFormatOperation : (add  $t5 ,$zero,$a0)
+        add, and
+    FirstRFormatOperation : (jr rs)
+        jr
+    SecondRformatOperation : DIV rs, rt
+        div
+
+I:
+    CommonIFormatOperation: (addi, $t0, $t1, imm16)
+        addi, andi
+
+    SecondIFormatOperation: (lw, $t0, (imm16)$t1)
+        lw
+
+    ThirdIFormatOperation : (lui rt, imm16) --->rt
+        lui
+    Third2IFormatOperation : (BGEZ rs, offset) --> rs
+        bgez
+
+    FourthIFormatOperation: (B imm16)
+        b
+
+
+J:
+    JFormatOperation: j
+
+
+Special:
+    syscall , ...

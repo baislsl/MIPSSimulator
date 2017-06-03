@@ -1,0 +1,35 @@
+.text
+label_0:
+nor $at, $zero, $zero
+    add $v1, $at, $at
+ add $v1, $v1, $v1
+add $v1, $v1, $v1
+add $v1, $v1, $v1
+add $v1, $v1, $v1
+add $v1, $v1, $v1
+nor $s4, $v1, $zero
+add $v1, $v1, $v1
+add $v1, $v1, $v1
+add $v1, $v1, $v1
+add $v1, $v1, $v1
+add $v1, $v1, $v1
+add $v1, $v1, $v1
+add $v1, $v1, $v1
+add $v1, $v1, $v1
+add $v1, $v1, $v1
+add $v1, $v1, $v1
+add $v1, $v1, $v1
+add $v1, $v1, $v1
+add $v1, $v1, $v1
+add $v1, $v1, $v1
+add $v1, $v1, $v1
+add $v1, $v1, $v1
+add $v1, $v1, $v1
+add $v1, $v1, $v1
+add $v1, $v1, $v1
+add $v1, $v1, $v1
+add $a2, $v1, $v1
+add $v1, $a2, $a2
+add $a0, $v1, $v1
+add $t5, $a0, $a0
+add $t0, $t5, $t5

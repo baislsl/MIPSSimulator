@@ -1,0 +1,50 @@
+MIPS汇编器实现功能:
+    基本汇编
+    汇编转换->机器码,,实际上执行机器码
+    exception判断处理
+    能寻找出语法错误
+    system call
+    显示寄存器数据
+    实现宏macro
+拓展功能:
+    语法高亮
+    debug调试
+
+
+compile:
+    首先找出说有移动的地址::标记, 建立索引
+    之后逐句分析code语法并逐一转换为机器码存在内存里面
+run:
+    找到main入口,分析执行机器
+link:
+    暂时不作要求
+
+analysis code -> machine code
+                    |
+                 write into memory
+
+
+run the machine according to the bit memory
+
+Memory Allocation 105 -> ALPD
+
+li $**, imm 全部转为
+    lui $at, imm>>16
+    ori $**, $at, imm & 0x0000ffff
+la $**, add 全部转为
+    lui $at, add>>16
+    lui $**, $at, add & 0x0000ffff
+la $**1, imm(%**2)全部转为
+    addi $**1, $**2, imm
+syscall
+    0xc0000000
+
+*** rs, rt, rd
+*** rs, rt, imm_16
+*** rs, imm(rt)
+*** rs, imm_16
+*** rs, imm_26
+
+添加一个指令: 找到对应继承的Operation, 实现Conduct和name, 在OperationBuilder中添加对应的指令
+
+beq $t3,1,address -> 不支持
